@@ -20,3 +20,7 @@
 
 ## *Reading 5 : Version Control*
 - *How Git works and how to use it*
+> Everything you need to know about Git is on the [Pro Git book](https://git-scm.com/book/zh/v2).
+
+## *Readng 6 : Specifications*
+- *Specifications and Exceptions*
