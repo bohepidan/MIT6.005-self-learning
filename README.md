@@ -1,4 +1,5 @@
 # MIT 6.005 SUMMARY
+- **[Lecture website](https://ocw.mit.edu/courses/6-005-software-construction-spring-2016/pages/readings/)**
 
 ## Reading 3 : Testing
 - Test-first programming. Write tests before you write code.
