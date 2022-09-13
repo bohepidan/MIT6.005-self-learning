@@ -1,6 +1,11 @@
 # MIT 6.005 SUMMARY
 - **[Lecture website](https://ocw.mit.edu/courses/6-005-software-construction-spring-2016/pages/readings/)**
 
+## Reading 1 : Static Checking
+
+## Reading 2 : Basic java
+- [Java Tutorial](https://docs.oracle.com/javase/tutorial/java/javaOO/index.html)
+
 ## Reading 3 : Testing
 - Test-first programming. Write tests before you write code.
 - Partitioning and boundaries for choosing test cases systematically.
@@ -23,9 +28,9 @@
 - *How Git works and how to use it*
 > Everything you need to know about Git is on the [Pro Git book](https://git-scm.com/book/zh/v2).
 
-## Readng 6 : Specifications
+## Reading 6 : Specifications
 - *An appropriately weak specification gives freedom to the implementor, and an appropriately strong specification gives freedom to the client.*
-- *Java exception statement*
+- [Java exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html)
 
 ## Reading 7 : Designing Specifications
 - *Three dimensions for comparing specs: deterministic, declarative, strong*
