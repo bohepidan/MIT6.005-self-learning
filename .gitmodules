@@ -1,3 +1,6 @@
 [submodule "MIT6.005-PS0"]
 	path = MIT6.005-PS0
 	url = https://github.com/bohepidan/MIT6.005-PS0.git
+[submodule "MIT6.005-PS1"]
+	path = MIT6.005-PS1
+	url = https://github.com/bohepidan/MIT6.005-PS1.git
