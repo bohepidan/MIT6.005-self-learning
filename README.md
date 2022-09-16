@@ -46,3 +46,8 @@
   - failing fast with assertions keeps a bug’s effects from spreading
   - incremental development and unit testing confine bugs to your recent code
   - scope minimization reduces the amount of the program you have to search
+
+## Reading 9 : Mutability & Immutability
+- **Safe from bugs.** Immutable objects aren’t susceptible to bugs caused by aliasing. Immutable references always point to the same object.
+- **Easy to understand.** Because an immutable object or reference always means the same thing, it’s simpler for a reader of the code to reason about — they don’t have to trace through all the code to find all the places where the object or reference might be changed, because it can’t be changed.
+- **Ready for change.** If an object or reference can’t be changed at runtime, then code that depends on that object or reference won’t have to be revised when the program changes.
