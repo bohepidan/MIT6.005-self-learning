@@ -51,3 +51,10 @@
 - **Safe from bugs.** Immutable objects aren’t susceptible to bugs caused by aliasing. Immutable references always point to the same object.
 - **Easy to understand.** Because an immutable object or reference always means the same thing, it’s simpler for a reader of the code to reason about — they don’t have to trace through all the code to find all the places where the object or reference might be changed, because it can’t be changed.
 - **Ready for change.** If an object or reference can’t be changed at runtime, then code that depends on that object or reference won’t have to be revised when the program changes.
+
+## Reading 10 : Recursion
+- **Safe from bugs.** Recursive code is simpler and often uses immutable variables and immutable objects.
+
+- **Easy to understand.** Recursive implementations for naturally recursive problems and recursive data are often shorter and easier to understand than iterative solutions.
+
+- **Ready for change.** Recursive code is also naturally reentrant, which makes it safer from bugs and ready to use in more situations.
