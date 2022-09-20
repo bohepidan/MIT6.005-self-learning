@@ -58,3 +58,8 @@
 - **Easy to understand.** Recursive implementations for naturally recursive problems and recursive data are often shorter and easier to understand than iterative solutions.
 
 - **Ready for change.** Recursive code is also naturally reentrant, which makes it safer from bugs and ready to use in more situations.
+
+## Reading 11 : Debugging
+- **Safe from bugs.** We’re trying to prevent them and get rid of them.
+- **Easy to understand.** Techniques like static typing, final declarations, and assertions are additional documentation of the assumptions in your code. Variable scope minimization makes it easier for a reader to understand how the variable is used, because there’s less code to look at.
+- **Ready for change.** Assertions and static typing document the assumptions in an automatically-checkable way, so that when a future programmer changes the code, accidental violations of those assumptions are detected.
