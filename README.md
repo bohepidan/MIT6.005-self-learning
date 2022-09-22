@@ -63,3 +63,10 @@
 - **Safe from bugs.** We’re trying to prevent them and get rid of them.
 - **Easy to understand.** Techniques like static typing, final declarations, and assertions are additional documentation of the assumptions in your code. Variable scope minimization makes it easier for a reader to understand how the variable is used, because there’s less code to look at.
 - **Ready for change.** Assertions and static typing document the assumptions in an automatically-checkable way, so that when a future programmer changes the code, accidental violations of those assumptions are detected.
+
+## Reading 12 : Abstract Data Type
+- Abstract data types are characterized by their operations.
+- Operations can be classified into creators, producers, observers, and mutators.
+- An ADT’s specification is its set of operations and their specs.
+- A good ADT is simple, coherent, adequate, and representation-independent.
+- An ADT is tested by generating tests for each of its operations, but using the creators, producers, mutators, and observers together in the same tests.
