@@ -70,3 +70,10 @@
 - An ADT’s specification is its set of operations and their specs.
 - A good ADT is simple, coherent, adequate, and representation-independent.
 - An ADT is tested by generating tests for each of its operations, but using the creators, producers, mutators, and observers together in the same tests.
+
+## Reading 13 : Abstraction Functions and Rep Invariants
+- An invariant is a property that is always true of an ADT object instance, for the lifetime of the object.
+- A good ADT preserves its own invariants. Invariants must be established by creators and producers, and preserved by observers and mutators.
+- The rep invariant specifies legal values of the representation, and should be checked at runtime with checkRep() .
+- The abstraction function maps a concrete representation to the abstract value it represents.
+- Representation exposure threatens both representation independence and invariant preservation.
