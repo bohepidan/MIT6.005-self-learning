@@ -83,3 +83,12 @@
 - **Easy to understand.** Clients and maintainers know exactly where to look for the specification of the ADT. Since the interface doesn’t contain instance fields or implementations of instance methods, it’s easier to keep details of the implementation out of the specifications.
 - **Ready for change.** We can easily add new implementations of a type by adding classes that implement interface. If we avoid constructors in favor of static factory methods, clients will only see the interface. That means we can switch which implementation class clients are using without changing their code at all.
 - **[Why Interfaces?](https://ocw.mit.edu/ans7870/6/6.005/s16/classes/14-interfaces/#why_interfaces)**
+
+## Reading 15 : Equality
+- **[How to override `Object.hashCode()`?](https://stackoverflow.com/questions/113511/best-implementation-for-hashcode-method-for-a-collection)**
+- *Always add notion @Override to override methods.*
+- Can’t really use Integer interchangeably with int(e.g. == override). 
+- Equality should be an equivalence relation (reflexive, symmetric, transitive).
+- Equality and hash code must be consistent with each other, so that data structures that use hash tables (like `HashSet` and `HashMap` ) work properly.
+- The abstraction function is the basis for equality in immutable data types.
+- Reference equality is the basis for equality in mutable data types; this is the only way to ensure consistency over time and avoid breaking rep invariants of hash tables.
