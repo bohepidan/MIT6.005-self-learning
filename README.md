@@ -87,8 +87,15 @@
 ## Reading 15 : Equality
 - **[How to override `Object.hashCode()`?](https://stackoverflow.com/questions/113511/best-implementation-for-hashcode-method-for-a-collection)**
 - *Always add notion @Override to override methods.*
-- Can’t really use Integer interchangeably with int(e.g. == override). 
+- *Can’t really use Integer interchangeably with int(e.g. == override).*
 - Equality should be an equivalence relation (reflexive, symmetric, transitive).
 - Equality and hash code must be consistent with each other, so that data structures that use hash tables (like `HashSet` and `HashMap` ) work properly.
 - The abstraction function is the basis for equality in immutable data types.
 - Reference equality is the basis for equality in mutable data types; this is the only way to ensure consistency over time and avoid breaking rep invariants of hash tables.
+
+## Reading 16 : Recursive Data Types
+- *Immutability is powerful not just because of its safety, but also because of the potential for sharing.*
+- *Keep null s out of your data structures, and your life will be happier.*
+- **Safe from bugs.** Recursive datatypes allow us to tackle problems with a recursive or unbounded structure. Implementing appropriate data structures that encapsulate important operations and maintain their own invariants is crucial for correctness.
+- **Easy to understand.** Functions over recursive datatypes, specified in the abstract type and implemented in each concrete variant, organize the different behavior of the type.
+- **Ready for change.** A recursive ADT, like any ADT, separates abstract values from concrete representations, making it possible to change low-level code and high-level structure of the implementation without changing clients.
