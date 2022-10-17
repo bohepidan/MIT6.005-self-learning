@@ -99,3 +99,26 @@
 - **Safe from bugs.** Recursive datatypes allow us to tackle problems with a recursive or unbounded structure. Implementing appropriate data structures that encapsulate important operations and maintain their own invariants is crucial for correctness.
 - **Easy to understand.** Functions over recursive datatypes, specified in the abstract type and implemented in each concrete variant, organize the different behavior of the type.
 - **Ready for change.** A recursive ADT, like any ADT, separates abstract values from concrete representations, making it possible to change low-level code and high-level structure of the implementation without changing clients.
+
+## Reading 17 : Regular Expressions
+- 3 important production expresstions : 
+  - concatenation
+  `x ::= y z      #an x is a y followed by a z`
+  - repetition
+  `x ::= y*       #an x is zero or more y`
+  - union(alternation)
+  `x ::= y | z    #an x is a y or a z`
+- e.g. `http://didit.csail.mit.edu:4949/`
+  The grammar is:
+  ```url
+  url ::= 'http://' hostname (':' port)? '/' 
+
+  hostname ::= word '.' hostname | word '.' word
+
+  port ::= [0-9]+
+
+  word ::= [a-z]+
+  ```
+  Which is defined recursively and is not a regex.
+  The parse tree is shown below:
+  ![parse tree](/images/parse_tree.png)
