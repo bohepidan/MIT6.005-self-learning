@@ -122,3 +122,13 @@
   Which is defined recursively and is not a regex.
   The parse tree is shown below:
   ![parse tree](/images/parse_tree.png)
+
+## Reading 18 : Parser Generators
+- **[reading page](https://ocw.mit.edu/ans7870/6/6.005/s16/classes/18-parser-generators/)**
+- 可以使用`Antlr 4`来应对需要进行语法分析的场景
+- Antlr 4能将输入的字符串流转化为语法树(parser tree)，通过对该语法树进行操作可以生成递归数据类型
+- **Safe from bugs.** A grammar is a declarative specification for strings and streams, which can be implemented automatically by a parser generator. These specifications are often simpler, more direct, and less likely to be buggy then parsing code written by hand.
+
+- **Easy to understand.** A grammar captures the shape of a sequence in a form that is compact and easier to understand than hand-written parsing code.
+
+- **Ready for change.** A grammar can be easily edited, then run through a parser generator to regenerate the parsing code.
