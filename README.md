@@ -132,3 +132,12 @@
 - **Easy to understand.** A grammar captures the shape of a sequence in a form that is compact and easier to understand than hand-written parsing code.
 
 - **Ready for change.** A grammar can be easily edited, then run through a parser generator to regenerate the parsing code.
+
+## Reading 19 : Concurrency
+- printf和debug的运行时间是简单语句的几十上百倍，因此很多race condition会因为debug而“消失”，但实际完全没有解决问题
+- Concurrency: multiple computations running simultaneously
+- Shared-memory & message-passing paradigms
+- Processes & threads
+  - Process is like a virtual computer; thread is like a virtual processor
+- Race conditions
+  - When correctness of result (postconditions and invariants) depends on the relative timing of events
